@@ -1,0 +1,133 @@
+
+body {
+  width: 100vw;
+  height: 200vh;
+  background: #121212;
+}
+
+.navbar-brand {
+  height: 2.2em;
+  font-size: 25px;
+  color: red;
+  text-shadow: 1px 1px greenyellow;
+  align-self: center;
+}
+
+.navbar-toggler {
+  width: 60px;
+}
+
+.logo {
+  margin-top: 2em;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.logo-img {
+  height: 100%;
+}
+
+
+
+
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 100px;
+  height: 50vh;
+  /* width: 50vw; */
+}
+
+.carousel-inner {
+  height: 50vh;
+  width: 50vw;
+}
+.carousel-inner img {
+  width: auto;
+  height: 50vh;
+  width: auto;
+}
+.warning-div {
+  height: 40vh;
+}
+.btn-mine {
+  background-color: #2328;
+  border: .2px solid limegreen;
+  color: red;
+  font-size: 1.4em;
+  text-shadow: 1px 1px white;
+  box-shadow: var(--bs-btn-focus-box-shadow);
+  /* box-shadow: 4px 4px black; */
+  margin: 1em;
+}
+.btn-mine:hover {
+  background-color: #2328;
+  border: .2px solid limegreen;
+  box-shadow: var(--bs-btn-focus-box-shadow);
+  color: red;
+  transform: scale(110%);
+}
+.btn-mine:focus {
+  background-color: #2328;
+  border: .2px solid limegreen;
+  color: red;
+}
+
+
+
+.modal-dialog {
+  border-radius: 20%;
+  border: 4px solid orange;
+}
+
+.modal-title {
+  color: white;
+  margin-left: 2em;;
+}
+
+.modal-content {
+  background: black;
+  border-radius: 20%;
+  display: flex; 
+  /* flex-direction: row; */
+  justify-content: center;
+  /* align-items: center; */
+  text-align: center;
+}
+
+.modal-content img {
+  position: relative;
+  left: 5%;
+}
+
+
+.modal-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.modal-footer .btn-secondary {
+  margin-left: 140px;
+}
+
+.interrobot {
+  height: 50%;
+  width: 50%;
+  /* border: solid pink;*/
+} 
+
+.leia {
+  /* position: relative; */
+  /* top: 50px; */
+  margin-left: 200px;
+  margin-top: -100px;
+  height: 200px;
+  width: 200px;
+  filter: brightness(180%);
+  /* align-self: flex-end; */
+  /* border: solid green; */
+
+}
