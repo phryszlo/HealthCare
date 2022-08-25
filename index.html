@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Healthcare</title>
+    <title>Robots</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -15,35 +15,86 @@
   </head>
   <body>
     <!-- NavBar -->
+
     <nav class="navbar navbar-expand-lg bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          Health Care Robots
-        </a>
+        <a class="navbar-brand" href="#">Medical Robotics</a>
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Featured doom scenarios</a>
+              <a class="nav-link" href="#">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Pricing</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Don't touch this</a>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Featured doom scenarios
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="form.html">Doom</a></li>
+                <li><a class="dropdown-item" href="#">Lethal Injection</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    Rampant Scalpel-wielding Robots
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Featured better scenarios
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#">AI Cancer Diagnosis</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Medical Supply Delivery</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    Telepresence for Remote Appointments
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    Streamline Hospital Logistics
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    Access to Radiological Spaces
+                  </a>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>
@@ -52,123 +103,142 @@
 
     <!-- NavBar End -->
 
-    <div class="logo">
-      <img
-        src="images/HealthcareRobotics_logo_COLOR.png"
-        alt=""
-        class="logo-img"
-      />
+    <!-- spinner outside of main div? -->
+    <div class="spinner-border text-warning" role="status">
+      <span class="visually-hidden">Loading...</span>
     </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-      crossorigin="anonymous"
-    ></script>
-    <script src="app.js"></script>
-  </body>
+    <div class="main-content">
+      <div class="logo">
+        <img
+          src="images/HealthcareRobotics_logo_COLOR.png"
+          alt=""
+          class="logo-img"
+        />
+        <p class="tooltip-p">
+          <a href="form.html">
+            <button data-mdb-toggle="tooltip" title="Click for login form">
+              tooltip
+            </button>
+          </a>
+        </p>
+      </div>
 
-  <!--Modal START -->
+      <!--Modal START -->
 
-  <!-- Modal -->
-  <div
-    class="modal fade"
-    id="exampleModal"
-    tabindex="-1"
-    aria-labelledby="exampleModalLabel"
-    aria-hidden="true"
-  >
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">
-            ...if the robots win...
-          </h5>
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          ></button>
-        </div>
-        <div class="modal-body">
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
           <div class="modal-content">
-            <img src="images/IT-O_negtd.webp" alt="" class="interrobot" />
-            <img src="images/leai.jpg" alt="" class="leia" />
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">
+                ...if the robots win...
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="modal-content">
+                <img src="images/IT-O_negtd.webp" alt="" class="interrobot" />
+                <img src="images/leai.jpg" alt="" class="leia" />
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                I see
+              </button>
+              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
           </div>
         </div>
-        <div class="modal-footer">
-          <button
-            type="button"
-            class="btn btn-secondary"
-            data-bs-dismiss="modal"
-          >
-            I see
-          </button>
-          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-        </div>
       </div>
-    </div>
-  </div>
-  <!-- Modal END -->
+      <!-- Modal END -->
 
-  <!-- carousel.crossfade -->
-  <div
-    id="carouselExampleFade"
-    class="carousel slide carousel-fade"
-    data-bs-ride="carousel"
-  >
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="warning-div">
-          <img
-            src="images/robots-in-healthcare.jpg"
-            class="d-block w-100"
-            alt="..."
-          />
+      <!-- carousel.crossfade -->
+      <div
+        id="carouselExampleFade"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="warning-div">
+              <img
+                src="images/robots-in-healthcare.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/YuMi_at_Karolinska_University_Hospital_in_Solna_Sweden.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+
+          <div class="carousel-item">
+            <img
+              src="images/davinci-inline.webp"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img src="images/robot.png" class="d-block w-100" alt="..." />
+          </div>
         </div>
-      </div>
-      <div class="carousel-item">
-        <img
-          src="images/YuMi_at_Karolinska_University_Hospital_in_Solna_Sweden.jpg"
-          class="d-block w-100"
-          alt="..."
-        />
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        <!-- Button trigger modal -->
+        <button
+          type="button"
+          class="btn btn-primary btn-mine"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          WARNING
+        </button>
       </div>
 
-      <div class="carousel-item">
-        <img src="images/davinci-inline.webp" class="d-block w-100" alt="..." />
-      </div>
-      <div class="carousel-item">
-        <img src="images/robot.png" class="d-block w-100" alt="..." />
-      </div>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"
+      ></script>
+
+      <script src="app.js"></script>
     </div>
-    <button
-      class="carousel-control-prev"
-      type="button"
-      data-bs-target="#carouselExampleFade"
-      data-bs-slide="prev"
-    >
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button
-      class="carousel-control-next"
-      type="button"
-      data-bs-target="#carouselExampleFade"
-      data-bs-slide="next"
-    >
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-    <!-- Button trigger modal -->
-    <button
-      type="button"
-      class="btn btn-primary btn-mine"
-      data-bs-toggle="modal"
-      data-bs-target="#exampleModal"
-    >
-      WARNING
-    </button>
-  </div>
+  </body>
 </html>
